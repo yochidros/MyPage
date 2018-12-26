@@ -1,11 +1,14 @@
 import Vue from 'vue';
-import App from './App.vue';
-import router from './router';
-import store from './store';
+import App from './entry/App.vue';
+import { createStore } from './store';
+import { createRouter } from './router';
 
 Vue.config.productionTip = false;
 
-new Vue({
+const router = createRouter();
+const store = createStore();
+
+const app = new Vue({
   router,
   store,
   render: (h) => h(App),
