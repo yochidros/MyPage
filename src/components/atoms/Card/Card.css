@@ -1,11 +1,11 @@
 
 .card {
-    width: fit-content;
+    width: auto;
     height: auto;
     background: #EEEEEE;
     border-radius: 8px;
+    justify-items: center;
     border: darkgrey 1px solid;
-    text-align: center;
 }
 
 img {
@@ -15,7 +15,13 @@ img {
 }
 
 .card-title {
-    width: auto;
-    height: auto;
-    margin: 0 auto;
+    width: available;
+    text-wrap: inherit;
+    justify-content: center;
+    height: 120px;
+    margin: auto;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    word-wrap: break-word;
 }

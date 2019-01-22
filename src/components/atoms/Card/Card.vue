@@ -1,7 +1,6 @@
 <template>
     <div class="card">
-        <img :src="item.imageURL">
-        <h3> {{ item.title }} </h3>
+        <h3 class="card-title" v-on:click="onClickRepository"> {{ item.name }} </h3>
     </div>
 </template>
 
