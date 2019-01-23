@@ -7,7 +7,7 @@
            src="../../../assets/myIcon.png"
            v-bind:src="user.avatar_url">
       <div>
-        <h1 class="name">{{ user.name }}</h1>
+        <h1 class="name">{{ user.name }} <b-badge variant="primary">New</b-badge></h1>
         <p class="bio"> {{ user.bio }}</p>
       </div>
     </div>

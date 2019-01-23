@@ -14,7 +14,7 @@
     .card-collection {
         display: grid;
         height: auto;
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
         gap: 10px;
         padding: 9px;
         margin-left: 20%;
