@@ -1,26 +1,33 @@
-import { Component, Vue } from 'vue-property-decorator';
+import {Component, Prop, Vue} from 'vue-property-decorator';
 import CardCollection from '@/components/molecules/CardCollection/CardCollection';
 import { Getters as GithubGetters } from '@/store/modules/github/getters';
 import {Getter} from 'vuex-class';
+import Spinner from '@/components/atoms/Spinner/Spinner';
 
 @Component({
     components: {
         CardCollection,
+        Spinner,
     },
 })
 export default class Home extends Vue {
     @Getter('github/repos')
     protected repos: GithubGetters['repos'];
 
+    @Prop() protected isLoading: boolean = true;
+
     public mounted() {
         this.asyncDataClient();
     }
 
     public async asyncDataClient() {
+        this.isLoading = true;
         try {
             await this.$store.dispatch('github/fetchRepos', {});
+            this.isLoading = false;
         } catch (error) {
             console.log(error);
+            this.isLoading = false;
         }
     }
 
