@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="card">
         <b-card>
             <h3><b>{{ item.name }}</b></h3>
             <p class="card-text" style="color: #919191;">

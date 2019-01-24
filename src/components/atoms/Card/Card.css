@@ -1,1 +1,13 @@
 
+
+.card {
+    height: 280px;
+}
+
+.card-text {
+    max-lines: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.card-link {
+}
