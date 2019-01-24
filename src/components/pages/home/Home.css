@@ -5,15 +5,3 @@
     margin-top: 10px;
 }
 
-@media (max-width: 600px) {
-    img {
-        margin-top: 0;
-        width: 100%;
-        height: auto;
-    }
-    .bio {
-        width: 80%;
-        color: #919191;
-        word-wrap: break-spaces;
-    }
-}

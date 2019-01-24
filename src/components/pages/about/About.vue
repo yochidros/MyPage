@@ -1,5 +1,10 @@
 <template>
   <div class="about">
+      <div v-if="!user">
+          <div class="loading-view">
+            <pulse-loader class="load-spinner" :loading="isLoading" :color="spinnerColor" :width="spinnerWidth" :height="spinnerHeight"></pulse-loader>
+          </div>
+      </div>
     <div v-if="user"
          class="github-info"
     >
@@ -30,5 +35,5 @@
     </div>
   </div>
 </template>
-<script lang="ts" src="./About.ts"></script>
+<script lang="ts" src="./About.ts" ></script>
 <style src="./About.css" scoped></style>

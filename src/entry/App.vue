@@ -35,11 +35,11 @@
       padding: 20px 10px;
       text-align: center;
       text-decoration: none;
-      background-color: #42b983;
+      background-color: #3c8ab9;
       color: #FFFFFF;
       &.router-link-exact-active {
         color: #2c3e50;
-        background-color: #4f9a7c;
+        background-color: #4a6f9a;
       }
     }
   }
