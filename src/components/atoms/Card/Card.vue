@@ -3,7 +3,7 @@
         <b-card>
             <h3><b>{{ item.name }}</b></h3>
             <p class="card-text" style="color: #919191;">
-                Some quick example text to build on the <em>card title</em> and make up the bulk of the card's content.
+                {{ item.description }}
             </p>
             <a :href="item.html_url"
                class="card-link">{{ item.html_url }}</a>

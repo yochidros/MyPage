@@ -25,6 +25,7 @@
   display: table;
   width: 100%;
   .nav_item {
+    width: 50%;
     display: table-cell;
 
     a {

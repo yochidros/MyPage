@@ -14,11 +14,15 @@
     .card-collection {
         display: grid;
         height: auto;
-        grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
-        gap: 10px;
+        grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)) ;
+        grid-gap: 10px;
         padding: 9px;
         margin-left: 20%;
         margin-right: 20%;
+    }
+    .card-collection-contents {
+        margin: 0 0;
+        justify-content: center;
     }
     @media (max-width: 600px) {
         .card-collection {
@@ -27,12 +31,13 @@
             grid-template-columns: 1fr;
             gap: 10px;
             padding: 9px;
-            margin-left: 20%;
-            margin-right: 20%;
+            margin-left: 0;
+            margin-right: 0;
+            justify-content: center;
         }
-    }
-    .card-collection-contents {
-        margin: 0 0;
-        justify-content: center;
+        .card-collection-contents {
+            width: 80%;
+            justify-self: center;
+        }
     }
 </style>

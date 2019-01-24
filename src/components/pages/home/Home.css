@@ -16,6 +16,7 @@ img {
     margin: 0 auto;
 }
 
+
 .user-info {
     width: fit-content;
     border: 1px solid;
@@ -29,4 +30,17 @@ img {
 .repos-count {
    font-size: 2em;
     margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    img {
+        margin-top: 0;
+        width: 100%;
+        height: auto;
+    }
+    .bio {
+        width: 80%;
+        color: #919191;
+        word-wrap: break-spaces;
+    }
 }
