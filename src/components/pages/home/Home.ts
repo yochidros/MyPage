@@ -9,9 +9,6 @@ import {Getter} from 'vuex-class';
     },
 })
 export default class Home extends Vue {
-    @Getter('github/user')
-    protected user: GithubGetters['user'];
-
     @Getter('github/repos')
     protected repos: GithubGetters['repos'];
 
@@ -20,13 +17,9 @@ export default class Home extends Vue {
     }
 
     public async asyncDataClient() {
-        console.log('test');
-        console.log(this.$store);
         try {
-            await this.$store.dispatch('github/fetchUser', {});
             await this.$store.dispatch('github/fetchRepos', {});
         } catch (error) {
-            console.log('error');
             console.log(error);
         }
     }
