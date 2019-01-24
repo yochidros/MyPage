@@ -3,6 +3,7 @@ import CardCollection from '@/components/molecules/CardCollection/CardCollection
 import { Getters as GithubGetters } from '@/store/modules/github/getters';
 import {Getter} from 'vuex-class';
 import Spinner from '@/components/atoms/Spinner/Spinner';
+// @ts-ignore
 import Timeline from 'vue-tweet-embed/src/timeline';
 
 @Component({
