@@ -12,7 +12,6 @@ export default class CardCollection extends Vue {
 
     @Emit('onClickCollectionContent')
     protected onClickCollectionContent(item: object) {
-        console.log(item);
         return item;
     }
 }

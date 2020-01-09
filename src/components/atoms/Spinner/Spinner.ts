@@ -8,8 +8,8 @@ import PulseLoader from 'vue-spinner/src/PulseLoader.vue';
     },
 })
 export default class Spinner extends Vue {
-    @Prop() protected spinnerColor: string = "#83bdff";
-    @Prop() protected spinnerHeight: string = "200";
-    @Prop() protected spinnerWidth: string = "200";
-    @Prop() protected isLoading: boolean = true;
+    @Prop({ default: "#83bdff"}) protected spinnerColor: string;
+    @Prop({ default: "200" }) protected spinnerHeight: string;
+    @Prop({ default: "200"}) protected spinnerWidth: string;
+    @Prop() protected isLoading: boolean;
 }

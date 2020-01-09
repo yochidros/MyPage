@@ -4,11 +4,10 @@ import {Emit, Prop} from 'vue-property-decorator';
 
 @Component
 export default class Card extends Vue {
-    @Prop() private item!: Object;
+    @Prop() private item!: object;
 
     @Emit('onClickRepository')
     public onClickRepository(event: Event) {
-        console.log(this.item);
         return this.item;
     }
 }

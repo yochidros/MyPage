@@ -19,18 +19,15 @@ export const actions: DefineActions<Actions, State, Mutations, Getters> = {
                 code: error.code || '',
                 message: error.message || '',
             };
-            console.log(value);
-            return Promise.reject(error);
+            return Promise.reject(value);
         });
     },
 
     fetchRepos({ commit }, {}) {
         return api.fetch('users/yochidros/repos').then( (data) => {
-            console.log(data);
             commit('setRepos', {data });
             return data;
         }).catch( (error) => {
-            console.log(error);
             return Promise.reject(error);
         });
     },

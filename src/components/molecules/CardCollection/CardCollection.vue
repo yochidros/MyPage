@@ -3,7 +3,9 @@
         <div class="card-collection-contents"
              v-for="(repo, index) in repoItems"
              :key="`card-collection-contents-${index}`">
-           <Card :item="repo" @onClickRepository="onClickCollectionContent"></Card>
+            <div class="card-row">
+                <Card :item="repo" @onClickRepository="onClickCollectionContent"></Card>
+            </div>
         </div>
     </div>
 </template>
@@ -12,24 +14,18 @@
 
 <style scoped>
     .card-collection {
-        display: grid;
-        grid-gap: 10px;
-        grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)) ;
         padding: 8px;
-        margin-left: 20%;
-        margin-right: 20%;
+        margin: 0 20%;
     }
     .card-collection-contents {
-        margin: 0 0;
-        height: 280px;
-        justify-content: center;
+        margin: 0 auto;
+    }
+    .card-row {
+        margin: 10px 0;
     }
     @media (max-width: 600px) {
         .card-collection {
-            display: grid;
             height: auto;
-            grid-template-columns: 1fr;
-            gap: 10px;
             padding: 9px;
             margin-left: 0;
             margin-right: 0;

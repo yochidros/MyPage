@@ -5,7 +5,7 @@ export interface GithubApi {
 }
 
 const githubApi = {} as GithubApi;
-const baseURL = "https://api.github.com"
+const baseURL = 'https://api.github.com'
 
 githubApi.axios = axios.create({
    baseURL,

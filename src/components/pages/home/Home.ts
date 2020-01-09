@@ -17,7 +17,7 @@ export default class Home extends Vue {
     @Getter('github/repos')
     protected repos: GithubGetters['repos'];
 
-    @Prop() protected isLoading: boolean = true;
+    protected isLoading: boolean = true;
 
     public mounted() {
         this.asyncDataClient();

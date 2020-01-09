@@ -1,6 +1,9 @@
 <template>
   <div class="home">
-    <Timeline class="twitter-timeline" :id="'ych_dp'" :source-type="'profile'" :options="{ tweetLimit: '3' }"></Timeline>
+    <div class="twitter-timeline">
+      <Timeline :id="'ych_dp'" :source-type="'profile'" :options="{ tweetLimit: '3' }">
+      </Timeline>
+    </div>
     <div v-if="!repos">
       <Spinner :isLoading="isLoading"></Spinner>
     </div>

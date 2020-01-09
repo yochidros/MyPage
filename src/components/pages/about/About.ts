@@ -21,7 +21,7 @@ export default class About extends Vue {
     @Getter('github/user')
     protected user: GithubGetters['user'];
 
-    @Prop() protected isLoading: boolean = true;
+    protected isLoading: boolean = true;
 
     protected mounted() {
         this.asyncDataClient();

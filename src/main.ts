@@ -14,7 +14,6 @@ Vue.config.productionTip = false;
 const router = createRouter();
 const store = createStore();
 
-
 const app = new Vue({
   router,
   store,

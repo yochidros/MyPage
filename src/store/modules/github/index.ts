@@ -19,7 +19,8 @@ export interface State {
 }
 export function createGitHubStore() {
    const state: State = {
-       user: undefined,
+      user: undefined,
+      repos: undefined
    };
 
    return {
